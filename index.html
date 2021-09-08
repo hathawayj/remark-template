@@ -7,13 +7,45 @@
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
+      
       body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
+      h1 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+        color:darkslategrey;
+      }
+      h2, h3 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
+      .my-one-page-font {
+        font-size: 30px;
+      }     
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+            /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 30%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 70%;
+        float: right;
+        padding-top: 1em;
+      }
+      .inverse {
+        background: #272822;
+        color: #e4e4e1;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2, .inverse h3 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+      .lightfont {color:rgb(129, 126, 126);
     </style>
   </head>
   <body>
@@ -77,7 +109,11 @@ Notes for the _first_ slide!
         return '<img src="' + url + '" style="width: ' + percentage + '" />';
       };
       
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        ratio: "16:9",
+        highlightLanguage: 'javascript',
+        highlightStyle: 'monokai'
+       });
     </script>
   </body>
 </html>
