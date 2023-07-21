@@ -12,4 +12,10 @@ The most important things to know are:
 - Read the full guide to [remark markdown](https://github.com/gnab/remark/wiki)
 - Press `C` to clone a display; then press `P` to switch to presenter mode. Open help menu with `h`
 
+## Github Action Settings
+
+You will need to adjust the settings for the github action to create the pdf of your presentation.
+
+![github_action_settings.png]
+
 Fork this repository to get started! 
