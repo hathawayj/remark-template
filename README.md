@@ -16,6 +16,6 @@ The most important things to know are:
 
 You will need to adjust the settings for the github action to create the pdf of your presentation.
 
-![github_action_settings.png]
+![](github_action_settings.png)
 
 Fork this repository to get started! 
